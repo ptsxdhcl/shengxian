@@ -62,7 +62,7 @@
                 {% for banner in type.image_banners %}
 				<li>
 					<h4><a href="#">{{ banner.sku.name }}</a></h4>
-					<a href="#"><img src=""></a>
+					<a href="#"><img src="{{ banner.sku.image.url }}"></a>
 					<div class="prize">¥ {{ banner.sku.price }}</div>
 				</li>
 				{% endfor %}
