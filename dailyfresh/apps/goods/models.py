@@ -31,7 +31,7 @@ class GoodsSKU(BaseModel):
     desc = models.CharField(max_length=256, verbose_name='商品简介')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品价格')
     unite = models.CharField(max_length=20, verbose_name='商品单位')
-    image = models.ImageField(upload_to='goods', verbose_name='商品图片')
+    image = models.ImageField(upload_to='goo  ds', verbose_name='商品图片')
     stock = models.IntegerField(default=1, verbose_name='商品库存')
     sales = models.IntegerField(default=0, verbose_name='商品销量')
     status = models.SmallIntegerField(default=1, choices=status_choices, verbose_name='商品状态')
